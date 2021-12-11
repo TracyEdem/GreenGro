@@ -1,8 +1,8 @@
 <!-- Source: https://getbootstrap.com/ -->
 <?php
-ob_start();
+//ob_start();
 include "../model\dbconnect.php";
-ob_end_clean();
+//ob_end_clean();
 
 //Start session,get session variable,email and store when login is successful
 session_start();
