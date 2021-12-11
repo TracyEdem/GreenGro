@@ -3,8 +3,17 @@
             <!-- https://html.com/attributes/input-pattern/ -->
 <?php
 //ob_start();
-include "../model\dbconnect.php";
+//include "../model\dbconnect.php";
 //ob_end_clean();
+// Create connection
+    $conn = new mysqli("localhost", "root", "mydbp@ssword", "greengro");
+    // Check if connection is successful
+    if($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error."<br>");
+      }
+    else{  
+      echo "Successful connection!<br>";
+    }
 
 // create customer account
 if(isset($_POST["signup"])){
