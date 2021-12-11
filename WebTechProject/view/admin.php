@@ -1,8 +1,15 @@
 <!-- Source: https://getbootstrap.com/ -->
 <?php
-//ob_start();
-include "../model\dbconnect.php";
-//ob_end_clean();
+ob_start();
+$conn = new mysqli("localhost", "root", "mydbp@ssword", "greengro");
+    // Check if connection is successful
+    if($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error."<br>");
+      }
+    else{  
+      echo "Successful connection!<br>";
+    }
+ob_end_clean();
 
 //Start session,get session variable,email and store when login is successful
 session_start();
