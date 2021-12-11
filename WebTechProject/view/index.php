@@ -2,9 +2,9 @@
             <!--  https://getbootstrap.com/ -->
             <!-- https://html.com/attributes/input-pattern/ -->
 <?php
-ob_start();
+//ob_start();
 include "../model\dbconnect.php";
-ob_end_clean();
+//ob_end_clean();
 
 // create customer account
 if(isset($_POST["signup"])){
