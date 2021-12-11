@@ -2,9 +2,7 @@
             <!--  https://getbootstrap.com/ -->
             <!-- https://html.com/attributes/input-pattern/ -->
 <?php
-//ob_start();
-//include "../model\dbconnect.php";
-//ob_end_clean();
+ob_start();
 // Create connection
     $conn = new mysqli("localhost", "root", "mydbp@ssword", "greengro");
     // Check if connection is successful
@@ -14,6 +12,8 @@
     else{  
       echo "Successful connection!<br>";
     }
+ob_end_clean();
+
 
 // create customer account
 if(isset($_POST["signup"])){
