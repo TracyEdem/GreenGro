@@ -1,5 +1,10 @@
 <?php
-    require("dbcredentials.php");
+//     require("dbcredentials.php");
+//Credentials
+define("Server", "localhost");
+define("Username", "root");
+define("Password", "mydbp@ssword");
+define("Database","greengro");
 
 // Create connection
     $conn = new mysqli(Server, Username, Password, Database);
