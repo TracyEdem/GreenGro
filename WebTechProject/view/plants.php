@@ -55,9 +55,12 @@ if(isset($_SESSION['email'])) {
                     </ul>
                   </li>
                 </ul>
-                <div class="logout">
-              <button class="btn btn-outline-danger" href="signout.php">Log Out</button>
-             </div>
+                  <div class="logout">
+              <form action="signout.php">
+              <input type="submit" class="btn btn-outline-danger" value="Log Out">
+              </form>
+              
+            </div>
               </div>
             </div>
           </nav>
